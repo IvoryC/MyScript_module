@@ -11,7 +11,7 @@ Now I want to make my same plot, run my same test, still using almost exactly th
 This is now easy! My pipeline is configured to run my R script as the last module, so my custom analysis is run for each scenario and all of the results are clearly associeated with the corresponding input process.
 
 
-The config options for module are:
-myScript.myScript=example.R # implemented
-myScript.launcher=Rscript # implemented - needs testing
-myScript.resources= # not yet implemented - see issue
+The config options for module are:                           
+myScript.myScript=example.R # implemented                           
+myScript.launcher=Rscript # implemented - needs testing                           
+myScript.resources= # not yet implemented - see issue                           
