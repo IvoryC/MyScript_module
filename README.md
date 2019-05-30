@@ -1,7 +1,7 @@
 # MyScript_module
 
 
-The MyScript module is an empty shell of a module that allows the user to run a script of their own as part of a BioLockJ pipeline. This allows users to make their custom analysis tests part of the automated pipeline.  Any manual interventions that the user would normally have to do in the pipeline (such as a pre-processing step that we don't have a module for) can be made into an automated step in the pipeline.
+The MyScript module is an empty shell of a module that allows the user to run a script of their own as part of a BioLockJ pipeline. This allows users to make their custom analyses part of the automated pipeline.  Any manual interventions that the user would normally have to do in the pipeline (such as a pre-processing step that we don't have a module for) can be made into an automated step in the pipeline.
 
 The common use case will have a narrative like this:
 I ran my samples through BioLockJ using these preprocessing steps, and this classifier.
