@@ -25,6 +25,6 @@
     <booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="false"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="biolockj.BioLockJ"/>
     <listAttribute key="org.eclipse.jdt.launching.MODULEPATH"/>
-    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-b ~/git/BioLockJ/pipelines -u ~ -c ~/git/MyScript_module/test/muxRareFq_plusBash.properties"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-b \$\{BLJ\}/pipelines -u ~ -c ~/git/MyScript_module/test/muxRareFq_plusBash.properties"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="MyScript"/>
 </launchConfiguration>
