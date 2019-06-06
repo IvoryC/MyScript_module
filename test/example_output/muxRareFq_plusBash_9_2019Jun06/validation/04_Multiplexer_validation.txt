@@ -1,0 +1,2 @@
+name	size	sizeMB	sizeGB	md5	MATCHED_EXPECTATION
+muxRareFq_plusBash_9_2019Jun06.fastq.gz	499963174912	499963	499	3b0a585b66e3f8c64bcbe5296f310dcd	REPORT

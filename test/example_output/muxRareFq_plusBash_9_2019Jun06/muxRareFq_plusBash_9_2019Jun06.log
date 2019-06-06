@@ -1,0 +1,689 @@
+2019-06-06 16:55:56 INFO Log: ========================================================================
+2019-06-06 16:55:56 INFO Log: Launching BioLockJ v1.0 ~ Distributed by UNCC Fodor Lab @2019
+2019-06-06 16:55:56 INFO Log: ========================================================================
+2019-06-06 16:55:56 INFO Log: This code is free software; you can redistribute and/or modify it
+2019-06-06 16:55:56 INFO Log: under the terms of the GNU General Public License as published by
+2019-06-06 16:55:56 INFO Log: the Free Software Foundation; either version 2 of the License, or
+2019-06-06 16:55:56 INFO Log: any later version, provided proper credit is given to the authors.
+2019-06-06 16:55:56 INFO Log: This program is distributed in the hope that it will be useful,
+2019-06-06 16:55:56 INFO Log: but WITHOUT ANY WARRANTY; without even the implied warranty of
+2019-06-06 16:55:56 INFO Log: MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+2019-06-06 16:55:56 INFO Log: GNU General Public License for more details at http://www.gnu.org
+2019-06-06 16:55:56 INFO Log: 
+========================================================================
+2019-06-06 16:55:56 INFO Log: Application runtime args:
+2019-06-06 16:55:56 INFO Log:  ---> arg[0] = -b
+2019-06-06 16:55:56 INFO Log:  ---> arg[1] = ${BLJ}/pipelines
+2019-06-06 16:55:56 INFO Log:  ---> arg[2] = -u
+2019-06-06 16:55:56 INFO Log:  ---> arg[3] = ~
+2019-06-06 16:55:56 INFO Log:  ---> arg[4] = -c
+2019-06-06 16:55:56 INFO Log:  ---> arg[5] = ~/git/MyScript_module/test/muxRareFq_plusBash.properties
+2019-06-06 16:55:56 INFO Log: ========================================================================
+2019-06-06 16:55:56 INFO Log: --------> Bash Var Converted "${BLJ}/pipelines" ======> "/Users/ieclabau/git/BioLockJ/pipelines"
+2019-06-06 16:55:56 INFO Log: [ Get Bash Var (${HOME}) ]: STARTING
+2019-06-06 16:55:56 INFO Log: [ Detect-profile ]: STARTING
+2019-06-06 16:55:56 INFO Log: [ Detect-profile ]: CMD --> get_default_profile 
+2019-06-06 16:55:56 ERROR Log: Failed to find user shell profile 
+2019-06-06 16:55:56 INFO Log: [ Get Bash Var (${HOME}) ]: CMD --> /Users/ieclabau/git/BioLockJ/script/get_env_var ${HOME} 
+2019-06-06 16:55:56 INFO Log: [ Detect-profile ]: STARTING
+2019-06-06 16:55:56 INFO Log: [ Detect-profile ]: CMD --> get_default_profile 
+2019-06-06 16:55:56 ERROR Log: Failed to find user shell profile 
+2019-06-06 16:55:56 INFO Log: [ Get Bash Var (${HOME}) ]: COMPLETE
+2019-06-06 16:55:56 INFO Log: --------> Bash Var Converted "~" ======> "/Users/ieclabau"
+2019-06-06 16:55:56 INFO Log: --------> Bash Var Converted "~/git/MyScript_module/test/muxRareFq_plusBash.properties" ======> "/Users/ieclabau/git/MyScript_module/test/muxRareFq_plusBash.properties"
+2019-06-06 16:55:56 INFO Log: Initialize Config: /Users/ieclabau/git/MyScript_module/test/muxRareFq_plusBash.properties
+2019-06-06 16:55:56 INFO Log: Import All Config Properties for --> Top Level Pipeline Properties File: /Users/ieclabau/git/MyScript_module/test/muxRareFq_plusBash.properties
+2019-06-06 16:55:56 INFO Log: --------> Bash Var Converted "${BLJ}/resources/config/default/standard.properties" ======> "/Users/ieclabau/git/BioLockJ/resources/config/default/standard.properties"
+2019-06-06 16:55:56 INFO Log: LOAD CONFIG [ #0 ]: ---> /Users/ieclabau/git/BioLockJ/resources/config/default/standard.properties
+2019-06-06 16:55:56 INFO Log: LOAD CONFIG [ #1 ]: ---> /Users/ieclabau/git/MyScript_module/test/muxRareFq_plusBash.properties
+2019-06-06 16:55:56 INFO Log: Configured BioModule: biolockj.module.seq.SeqFileValidator
+2019-06-06 16:55:56 INFO Log: Configured BioModule: biolockj.module.seq.RarefySeqs
+2019-06-06 16:55:56 INFO Log: Configured BioModule: diy.MyScript
+2019-06-06 16:55:56 INFO Log: Configured BioModule: biolockj.module.seq.Multiplexer
+2019-06-06 16:55:56 INFO Log: --------> Bash Var Converted "${HOME}/projects/downloads" ======> "/Users/ieclabau/projects/downloads"
+2019-06-06 16:55:56 INFO Log: --------> Bash Var Converted "${HOME}/.bash_profile" ======> "/Users/ieclabau/.bash_profile"
+2019-06-06 16:55:56 INFO Log: --------> Bash Var Converted "${BLJ_SUP}/resources/test/metadata/testMetadata.tsv" ======> "/Users/ieclabau/git/blj_support/resources/test/metadata/testMetadata.tsv"
+2019-06-06 16:55:56 INFO Log: --------> Bash Var Converted "${BLJ_SUP}/resources/test/data/r16s_fastq/R1" ======> "/Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1"
+2019-06-06 16:55:56 INFO Log: Set Config property [ internal.pipelineDir ] = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06
+2019-06-06 16:55:56 INFO Log: Assign NEW pipeline root directory: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06
+2019-06-06 16:55:56 INFO Log: Total # initial properties: 74
+2019-06-06 16:55:56 INFO Log: Set Config property [ report.taxonomyLevels ] = phylum, class, order, family, genus
+2019-06-06 16:55:56 INFO Log: Initialize metadata property [ metadata.nullValue ] = NA
+2019-06-06 16:55:56 INFO Log: Set Config property [ input.ignoreFiles ] = testMetadata.tsv
+2019-06-06 16:55:56 INFO Log: Update metadata cache: /Users/ieclabau/git/blj_support/resources/test/metadata/testMetadata.tsv
+2019-06-06 16:55:56 INFO Log: ************************************************************************
+2019-06-06 16:55:56 INFO Log: ===> New Metadata file: /Users/ieclabau/git/blj_support/resources/test/metadata/testMetadata.tsv
+2019-06-06 16:55:56 INFO Log: ===> Sample IDs: [211, 214, 215, 217, 218, 220, 222, 223, 224, 225, 236, 237, 238, 241, 242, 245, 247, 248, 252, 257]
+2019-06-06 16:55:56 INFO Log: ===> Metadata fields: [Sex, Group, Age, BarcodeSequence]
+2019-06-06 16:55:56 INFO Log: ===> 1st Record: [211]: [M, Obese, 60, TGCACGTGATAA]
+2019-06-06 16:55:56 INFO Log: ************************************************************************
+2019-06-06 16:55:56 INFO Log: Set LOG_FILE = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/muxRareFq_plusBash_9_2019Jun06.log
+2019-06-06 16:55:56 INFO Log: Set pipeline.logLevel = INFO
+2019-06-06 16:55:56 INFO Log: Set LOG_APPEND = true
+2019-06-06 16:55:56 INFO Log: Set LOG_FORMAT = %m%n
+2019-06-06 16:55:56 INFO Log: ========================================================================
+2019-06-06 16:55:56 INFO Log: Pipeline Project Config File: /Users/ieclabau/git/MyScript_module/test/muxRareFq_plusBash.properties
+2019-06-06 16:55:56 INFO Log: Pipeline Default Config Files: [/Users/ieclabau/git/BioLockJ/resources/config/default/standard.properties]
+2019-06-06 16:55:56 INFO Log: ========================================================================
+2019-06-06 16:55:56 INFO Log: ===> List All Configured Properties:
+2019-06-06 16:55:56 INFO Log: ========================================================================
+2019-06-06 16:55:56 INFO Log: demultiplexer.barcodeCutoff = 0.05
+2019-06-06 16:55:56 INFO Log: exe.bowtie2Params = no-unal, k 60
+2019-06-06 16:55:56 INFO Log: exe.krakenParams = --only-classified-output, --preload
+2019-06-06 16:55:56 INFO Log: input.dirPaths = /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1
+2019-06-06 16:55:56 INFO Log: input.ignoreFiles = testMetadata.tsv
+2019-06-06 16:55:56 INFO Log: input.requireCompletePairs = Y
+2019-06-06 16:55:56 INFO Log: input.suffixFw = _R1
+2019-06-06 16:55:56 INFO Log: input.suffixRv = _R2
+2019-06-06 16:55:56 INFO Log: internal.configModules = biolockj.module.seq.SeqFileValidator, biolockj.module.seq.RarefySeqs, diy.MyScript, biolockj.module.seq.Multiplexer
+2019-06-06 16:55:56 INFO Log: internal.defaultConfig = /Users/ieclabau/git/BioLockJ/resources/config/default/standard.properties
+2019-06-06 16:55:56 INFO Log: internal.pipelineDir = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06
+2019-06-06 16:55:56 INFO Log: mail.encryptedPassword = SlrotqvCPGsFhWkKxtpwkQ==
+2019-06-06 16:55:56 INFO Log: mail.from = biolockj@gmail.com
+2019-06-06 16:55:56 INFO Log: mail.smtp.auth = Y
+2019-06-06 16:55:56 INFO Log: mail.smtp.host = smtp.gmail.com
+2019-06-06 16:55:56 INFO Log: mail.smtp.port = 25
+2019-06-06 16:55:56 INFO Log: mail.smtp.starttls.enable = Y
+2019-06-06 16:55:56 INFO Log: mail.to = msioda@uncc.edu
+2019-06-06 16:55:56 INFO Log: metadata.barcodeColumn = BarcodeSequence
+2019-06-06 16:55:56 INFO Log: metadata.columnDelim = \t
+2019-06-06 16:55:56 INFO Log: metadata.commentChar = 
+2019-06-06 16:55:56 INFO Log: metadata.fileNameColumn = InputFileName
+2019-06-06 16:55:56 INFO Log: metadata.filePath = /Users/ieclabau/git/blj_support/resources/test/metadata/testMetadata.tsv
+2019-06-06 16:55:56 INFO Log: metadata.nullValue = NA
+2019-06-06 16:55:56 INFO Log: metadata.required = Y
+2019-06-06 16:55:56 INFO Log: multiplexer.gzip = Y
+2019-06-06 16:55:56 INFO Log: myScript.myScript = /Users/ieclabau/git/MyScript_module/test/someUserScript.sh
+2019-06-06 16:55:56 INFO Log: pipeline.defaultDemultiplexer = biolockj.module.implicit.Demultiplexer
+2019-06-06 16:55:56 INFO Log: pipeline.defaultFastaConverter = biolockj.module.seq.AwkFastaConverter
+2019-06-06 16:55:56 INFO Log: pipeline.defaultSeqMerger = biolockj.module.seq.PearMergeReads
+2019-06-06 16:55:56 INFO Log: pipeline.downloadDir = /Users/ieclabau/projects/downloads
+2019-06-06 16:55:56 INFO Log: pipeline.env = local
+2019-06-06 16:55:56 INFO Log: pipeline.logLevel = INFO
+2019-06-06 16:55:56 INFO Log: pipeline.permissions = 770
+2019-06-06 16:55:56 INFO Log: pipeline.userProfile = /Users/ieclabau/.bash_profile
+2019-06-06 16:55:56 INFO Log: qiime.alphaMetrics = shannon
+2019-06-06 16:55:56 INFO Log: qiime.plotAlphaMetrics = Y
+2019-06-06 16:55:56 INFO Log: qiime.removeChimeras = Y
+2019-06-06 16:55:56 INFO Log: r.colorBase = black
+2019-06-06 16:55:56 INFO Log: r.colorHighlight = red
+2019-06-06 16:55:56 INFO Log: r.colorPalette = npg
+2019-06-06 16:55:56 INFO Log: r.colorPoint = black
+2019-06-06 16:55:56 INFO Log: r.debug = Y
+2019-06-06 16:55:56 INFO Log: r.pValFormat = %1.2g
+2019-06-06 16:55:56 INFO Log: r.pch = 20
+2019-06-06 16:55:56 INFO Log: r.pvalCutoff = 0.05
+2019-06-06 16:55:56 INFO Log: r.timeout = 10
+2019-06-06 16:55:56 INFO Log: r_CalculateStats.pAdjustMethod = BH
+2019-06-06 16:55:56 INFO Log: r_CalculateStats.pAdjustScope = LOCAL
+2019-06-06 16:55:56 INFO Log: r_PlotEffectSize.disableFoldChange = Y
+2019-06-06 16:55:56 INFO Log: r_PlotEffectSize.excludePvalAbove = 1
+2019-06-06 16:55:56 INFO Log: r_PlotEffectSize.maxNumTaxa = 40
+2019-06-06 16:55:56 INFO Log: r_PlotMds.distance = bray
+2019-06-06 16:55:56 INFO Log: r_PlotMds.numAxis = 3
+2019-06-06 16:55:56 INFO Log: rarefyOtuCounts.iterations = 10
+2019-06-06 16:55:56 INFO Log: rarefyOtuCounts.lowAbundantCutoff = 0.01
+2019-06-06 16:55:56 INFO Log: rarefyOtuCounts.quantile = 0.5
+2019-06-06 16:55:56 INFO Log: rarefyOtuCounts.rmLowSamples = N
+2019-06-06 16:55:56 INFO Log: rarefySeqs.max = 6000
+2019-06-06 16:55:56 INFO Log: rarefySeqs.min = 3000
+2019-06-06 16:55:56 INFO Log: rdp.minThresholdScore = 80
+2019-06-06 16:55:56 INFO Log: report.logBase = 10
+2019-06-06 16:55:56 INFO Log: report.minCount = 2
+2019-06-06 16:55:56 INFO Log: report.numHits = Y
+2019-06-06 16:55:56 INFO Log: report.numReads = Y
+2019-06-06 16:55:56 INFO Log: report.scarceCountCutoff = 0.25
+2019-06-06 16:55:56 INFO Log: report.scarceSampleCutoff = 0.25
+2019-06-06 16:55:56 INFO Log: report.taxonomyLevels = phylum, class, order, family, genus
+2019-06-06 16:55:56 INFO Log: script.batchSize = 4
+2019-06-06 16:55:56 INFO Log: script.defaultHeader = #!/bin/bash
+2019-06-06 16:55:56 INFO Log: script.numThreads = 4
+2019-06-06 16:55:56 INFO Log: script.permissions = 770
+2019-06-06 16:55:56 INFO Log: seqFileValidator.requireEqualNumPairs = Y
+2019-06-06 16:55:56 INFO Log: seqFileValidator.seqMaxLen = 240
+2019-06-06 16:55:56 INFO Log: seqFileValidator.seqMinLen = 100
+2019-06-06 16:55:56 INFO Log: trimPrimers.requirePrimer = Y
+2019-06-06 16:55:56 INFO Log: ========================================================================
+2019-06-06 16:55:56 INFO Log: Java Logger initialized
+2019-06-06 16:55:56 INFO Log: ========================================================================
+2019-06-06 16:55:56 INFO BioLockJ: Copy file: /Users/ieclabau/git/blj_support/resources/test/metadata/testMetadata.tsv to pipeline root: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06
+2019-06-06 16:55:56 INFO BioLockJUtil: Found pipeline input dir /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1
+2019-06-06 16:55:56 INFO BioLockJUtil: # Initial input files found: 20
+2019-06-06 16:55:56 INFO BioLockJUtil: # Initial input files after removing empty/ignored files: 20
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/257_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:22181:6820 1:N:0:TGCTATATCTGGA
+2019-06-06 16:55:56 INFO SeqUtil: seq: TTTTACTTATAGAGTGCCAGCAGCCGCGGTAATACGTAGGTGGCGAGCGTTATCCGGAATTATTGGGCGTAAAGAGGGAGCAGGCGGCACTAAGGGTCTGTGGTGAAAGATCGAAGCTTAACTTCGGTAAGCCATGGAAACCGTAGAGCTAGAGTGTGTGAGAGGATCGTGGAATTCCATGTGTAGCGGTGAAATGCGTAGATATATGGAGGAACACCAGTGGCGAAGGCGACGATCTGGCGCATAACTG
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/225_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:12267:6852 1:N:0:ATGTACGGCGACA
+2019-06-06 16:55:56 INFO SeqUtil: seq: AAGGACTAAGCGAGTGCCAGCCGCCGCGGTAATACGTAGGTGGCGAGCGTTATCCGGAATGATTGGGCGTAAAGGGTGCGCAGGCGGTCCTGCAAGTCTGGAGTGAAACGCATGAGCTCAACTCATGCATGGCTTTGGAAACTGGAGGACTGGAGAGCAGGAGAGGGCGGTGGAACTCCATGTGTAGCGGTAAAATGCGTAGATATATGGAAGAACACCAGTGGCGAAGGCGGCCGCCTGGCCTGTTGCT
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/223_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:7821:7089 1:N:0:ATTCATGGACGCA
+2019-06-06 16:55:56 INFO SeqUtil: seq: AAATACTCTTGGAGTGCCAGCCGCCGCGGTAATACGTAGGTGGCGAGCGTTGTCCGGATTTACTGGGCGTAAAGGGAGCGTAGGCGGACTTTTAAGTGAGATGTGAAATACTCGGGCTCAACTTGAGTGCTGCATTTCAAACTGGAAGTCTAGAGTGCAGGAGAGGAGAATGGAATTCCTAGTGTAGCGGTGAAATGCGTAGAGATTAGGAAGAACACCAGTGGCGAAGGCGATTCTCTGGACTGTAACT
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/224_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:17861:7358 1:N:0:GTTACGCATTACA
+2019-06-06 16:55:56 INFO SeqUtil: seq: TGAGCTAGTTGAGTGCCAGCCGCCGCGGTAAGATCGGAAGAGCACACGTCTGAACTCCAGTCACGTTACGCATTACATCTCGTATGCCGTCTTCTGCTTGAAAAAAAAAAAAAAAACTATACCGATCTATACTATTAATATTATATAAATAGAATATGGAAGTATATATACAAAAAATATCTAATTTGAAATAAACGTCAGTGTGGTGATATGAGATTATTTATTTAACGTGTTAGAGGTGTATCATTCT
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/245_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:6626:6885 1:N:0:GTGCCGGTGATAA
+2019-06-06 16:55:56 INFO SeqUtil: seq: ACTGACACGAGTGCCAGCAGCCGCGGTAATACGTAGGTGGCGAGCGTTGTCCGGATTTACTGGGCGTAAAGGGAGCGTAGGCGGACTTTTAAGTGAGATGTGAAATACTCGGGCTCAACTTGAGTGCTGCATTTCAAACTGGAAGTCTAGAGTGCAGGAGAGGAGAATGGAATTCCTAGTGTAGCGGTGAAATGCGTAGAGATTAGGAAGAACACCAGTGGCGAAGGCGATTCTCTGGACTGTAACTGAC
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/215_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:25950:6864 1:N:0:TGTGATGGAGAAA
+2019-06-06 16:55:56 INFO SeqUtil: seq: CAACGACTTAATGAGTGCCAGCAGCCGCGGTAATACGTAGGGGGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGCGTAGACGGAAGAGCAAGTCTGATGTGAAAGGCTGGGGCTTAACCCCAGGACTGCATTGGAAACTGTTGTTCTAGAGTGCCGGAGAGGTAAGCGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCTTACTGGACGGTAAC
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/237_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:8830:6909 1:N:0:GCGTGTTAAACCA
+2019-06-06 16:55:56 INFO SeqUtil: seq: CCTTTCACTGAGTGCCAGCAGCCGCGGTAATACGTAGGGGGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGCGTAGACGGAAGAGCAAGTCTGATGTGAAAGGCTGGGGCTTAACCCCGGGACTGCATTGGAAACTGTTTTTCTAGAGTGCCGGAGAGGTAAGCGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCAGCTTACTGGACGGTAACTGA
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/236_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:14680:6952 1:N:0:AGATAGGACAGGA
+2019-06-06 16:55:56 INFO SeqUtil: seq: ACGGTGACTAGGTGAGTGCCAGCCGCCGCGGTAATACGGAGGATCCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGAGCGTAGGCGGACTATTAAGTCAGCTGTGAGAGTTTGCGGCTCAACCGTAAAATTGCAGTTGATACTGGTCGTCTTGAGTGCAGTAGAGGTAGGCGGAATTCGTGGTGTAGCGGTGAAATGCTTAGATATCACGAAGAACTCCGATTGCGAAGGCAGCTTACTGGACTGTAA
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/247_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:14419:7007 1:N:0:TGATTTGGACCTA
+2019-06-06 16:55:56 INFO SeqUtil: seq: TTTCAACAGAGTGCCAGCAGCCGCGGTAAAACGTAGGGTGCAAGCGTTGTCCGGAATTACTGGGTGTAAAGGGAGCGCAGGCGGATTGGCAAGTTGGGAGTGAAATCTATGGGCTCAACCCATAAATTGCTTTCAAAACTGTCAGTCTTGAGTGGTGTAGAGGTAGGCGGAATTCCCGGTGTAGCGGTGGAATGCGTAGATATCGGGAGGAACACCAGTGGCGAAGGCGGCCTACTGGGCACTAACTGAC
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/222_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:6932:7619 1:N:0:GCGACTTGTGTAA
+2019-06-06 16:55:56 INFO SeqUtil: seq: GGTTTATTAGAAACCCCGGTAGTCCGTCCAAGTTCAGATCGGAAGAGCACACGTCTGAACTCCAGTCACGCGACTTGTGTAATCTCGTATGCCGTCTTCTGCTTGAAAAAAAAAAATTTACCAGAAATGTCGAATTAGCACACCGACTTCGTTAATGCACTGATATTACTCAAAAGATATATATAAATTTCTATAAATCTCACATTCCTAACAATTTTATAAGTATATATACTTTGACATCATTATATTT
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/248_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:19623:6758 1:N:0:TGTGAGCACGGTA
+2019-06-06 16:55:56 INFO SeqUtil: seq: GGTAACTAACTGAGTGCCAGCAGCCGCGGTAATACGTAGGTGGCAAGCGTTATCCGGAATTATTGGGCGTAAAGAGCGCGCAGGTGGTTAATTAAGTCTGATGTGAAAGCCCACGGCTTAACCGTGGAGGGTCATTGGAAACTGGTTGACTTGAGTGCAGAAGAGGGAAGTGGAATTCCATGTGTAGCGGTGAAATGCGTAGAGATATGGAGGAACACCTGTGGCGAAGGCGGCTTCTTGGTCTGCAACT
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/242_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:17191:7015 1:N:0:CTGGAAATCTGCA
+2019-06-06 16:55:56 INFO SeqUtil: seq: AAACCCGGGTAGTCCGTGCCAGCCAGATCGGAAGAGCACACGTCTGAACTCCAGTCACCTGGAAATCTGCATCTCGTATGCCGGCTTCTGCTTGAAAAAAAAAAAATACCTGGGCTCAACGCCTGGTCTGCATTTGAAACTGTAAATTTTGAGTGTCTGAGAGTAAATATGAATCCCTAGTGGAACGTTGAAAATCGTAAATATTAGGATGATCACTAGAGGCGAAGGCGTCAGTCTGGTGGATAACAGA
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/218_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:18930:6796 1:N:0:CCTTGGCTATCCA
+2019-06-06 16:55:56 INFO SeqUtil: seq: ACTGGACTGCTGGAGTGCCAGCAGCCGCGGTAATACAGAGGTCTCAAGCGTTGTTCGGAATCACTGGGCGTAAAGCGTGCGTAGGCTGTTTCGTAAGTCGTGTGTGAAAGGCGCGGGCTCAACCCGCGGACGGCACATGATACTGCGAGACTAGAGTAATGGAGGGGGAACCGGAATTCTCGGTGTAGCAGTGAAATGCGTAGATATCGAGAGGAACACTCGTGGCGAAGGCGGGTTCCTGGACATTAAC
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/238_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:22862:6896 1:N:0:CTCCTACTGTCTA
+2019-06-06 16:55:56 INFO SeqUtil: seq: AAGGGGGGGAGTGCCAGCAGATCGGAAGAGCACACGTCTGAACTCCAGTCACCTCCTACTGTCTATCTCGTATGCCGTCTTCTGCTTGAAAAAAAAAAAGACGACAAATCTGCTGAAATTTATGGCCGCTACGATAAAAATGATTGTCGTAGCCATACAGCATATTTTCATCTCTTCCATGATGCTGAAGTTTACACTTTCGGTGATTTCTGATTATTTGATACATTATCTAGTTAAAGGTGGAATTTCT
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/241_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:12819:6739 1:N:0:CAAGTTTACGGCA
+2019-06-06 16:55:56 INFO SeqUtil: seq: TATTTGACTTCATGAGTGCCAGCAGCCGCGGTAATACGTAGGTGGCAAGCGTTGTCCGGATTTACTGGGTGTAAAGGGCGTGTAGGCGGGTAGACAAGTCAGATGTGAAATACCGGGGCTCAACTCCGGGGCTGCATTTGAAACTGTATATCTTGAGTGTCGGAGAGGAAAGCGGAATTCCTAGTGTAGCGGTGAAATGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCTTTCTGGACGATAA
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/217_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:18605:6918 1:N:0:GTCGTCCTAAATA
+2019-06-06 16:55:56 INFO SeqUtil: seq: GCGACGTTGAGTGCCAGCAGCCGCGTAATACGTAGGGGGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGCGTAGACGGAAGAGCAAGTCTGATGTGAAAGGCTGGGGCTTAACCCCAGGACTGCATTGGAAACTGTTTTTCTAGAGTGCCGGAGAGGTAAGCGGAATTCCTAGTGTAGCGGTGAAACGCGTAGATATTAGGAGGAACACCAGTGGCGAAGGCGGCTTACTGGACGGTAACTGACG
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/220_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:20695:6937 1:N:0:CATTTGGACGACA
+2019-06-06 16:55:56 INFO SeqUtil: seq: CTTTTATTCGAGTGCCAGCCGCCGCGGTAATACGTAGGGGGCAAGCGTTATCCGGATTTATTGGGCGTAAAGGGAACGCAGGCGGTCTTTTAAGTCTGATGTGAAAGCCTTCGGCTTAACCGGAGTAGTGCATTGGAAACTGGGAGACTTGAGTGCAGAAGAGGAGAGTGGAACTCCATGTGTAGCGGTGAAATGCGTAGATATATGGAAGAACACCAGTGGCGAAAGCGGCTCTCTGGTCTGTAACTGA
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/252_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:15749:7070 1:N:0:TGAGGATGATAGA
+2019-06-06 16:55:56 INFO SeqUtil: seq: CCATTGACTATTTGAGTGCCAGCAGCCGCGGTAATACGTAGGTGGCAAGCGTTATCCGGAATTATTGGGCGTAAAGAGCGCGCAGGTGGTTAATTAAGTCTGATGTGAAAGCCCACGGCTTAACCGTGGAGGGTCATTGGAAACTGGTTGACTTGAGTGCAGAAGAGGGAAGTGGAATTCCATGTGTAGCGGTGAAATGCGTAGAGATATGGAGGAACACCAGTGGCGAAGGCGGCTTCCTGGTCTGCAA
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/r16s_subDir/211_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:19912:6756 1:N:0:TTATCACGTGCAA
+2019-06-06 16:55:56 INFO SeqUtil: seq: GATTACTTGTAGAGTGCCAGCAGCCGCGGTAATACGGAGGATCCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGAGCGTAGGCGGACGCTTAAGTCAGTTGTGAAAGTTTGCGGCTCAACCGTAAAATTGCAGTTGATACTGGGTGTCTTGAGTACAGTAGAGGCAGGCGGAATTCGTGGTGTAGCGGTGAAATGCTTAGATATCACGAAGAACTCCGATTGCGAAGGCAGCCTGCTGGACTGTAACT
+2019-06-06 16:55:56 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/r16s_subDir/214_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:26001:6879 1:N:0:TGACCGGTCAATA
+2019-06-06 16:55:56 INFO SeqUtil: seq: TGAGACTGACGGAGTGCCAGCAGCCGCGGTAATACGGAGGATCCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGAGCGTAGGCGGACGCTTAAGTCAGTTGTGAAAGTTTGCGGCTCAACCGTAAAATTGCAGTTGATACTGGGTGTCTTGAGTACAGTAGAGGCAGGCGGAATTCGTGGGGTAGCGGTGAAATGCTTAGATATCACGAAGAACTCCGATTGCGAAGGCAGCCTGCTGGACTGTAACT
+2019-06-06 16:55:56 INFO Config: Set Config property [ internal.pipelineInputTypes ] = seq
+2019-06-06 16:55:56 INFO Config: Set Config property [ pipeline.copyInput ] = N
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/257_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/225_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/223_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/224_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/245_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/215_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/237_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/236_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/247_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/222_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/248_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/242_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/218_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/238_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/241_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/217_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/220_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/252_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/r16s_subDir/211_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO SeqUtil: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/r16s_subDir/214_R1.fastq.gz --> #lines/read: 2
+2019-06-06 16:55:56 INFO Config: Set Config property [ internal.seqHeaderChar ] = @
+2019-06-06 16:55:56 INFO Config: Set Config property [ internal.seqType ] = fastq
+2019-06-06 16:55:56 INFO SeqUtil: Register Demux Status for: 20 input files.
+2019-06-06 16:55:56 INFO Config: Set Config property [ internal.multiplexed ] = N
+2019-06-06 16:55:56 INFO Config: Set Config property [ internal.pairedReads ] = N
+2019-06-06 16:55:56 INFO SeqUtil: Set internal.pairedReads=N
+2019-06-06 16:55:56 INFO Config: Set Config property [ metadata.fileNameColumn ] = 
+2019-06-06 16:55:56 INFO Pipeline: Initialize pipeline
+2019-06-06 16:55:56 INFO Config: Set Config property [ pipeline.disableAddImplicitModules ] = N
+2019-06-06 16:55:56 INFO BioModuleFactory: Set required 1st module (for all pipelines): biolockj.module.implicit.ImportMetadata
+2019-06-06 16:55:56 INFO Config: Set Config property [ internal.isMultiLineSeq ] = N
+2019-06-06 16:55:56 INFO Config: Set Config property [ pipeline.disableAddPreReqModules ] = N
+2019-06-06 16:55:56 INFO ImportMetadata: Construct module [ 00 ] for new /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/00_ImportMetadata
+2019-06-06 16:55:56 INFO SeqFileValidator: Construct module [ 01 ] for new /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator
+2019-06-06 16:55:56 INFO RarefySeqs: Construct module [ 02 ] for new /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs
+2019-06-06 16:55:56 INFO MyScript: Construct module [ 03 ] for new /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/03_MyScript
+2019-06-06 16:55:56 INFO Multiplexer: Construct module [ 04 ] for new /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/04_Multiplexer
+2019-06-06 16:55:56 INFO Config: Set Config property [ internal.allModules ] = biolockj.module.implicit.ImportMetadata, biolockj.module.seq.SeqFileValidator, biolockj.module.seq.RarefySeqs, diy.MyScript, biolockj.module.seq.Multiplexer
+2019-06-06 16:55:56 INFO Pipeline: Check dependencies for: biolockj.module.implicit.ImportMetadata
+2019-06-06 16:55:56 INFO Config: Set Config property [ validation.disableValidation ] = N
+2019-06-06 16:55:56 INFO Config: Set Config property [ validation.alwaysPass ] = N
+2019-06-06 16:55:56 INFO Pipeline: Check dependencies for: biolockj.module.seq.SeqFileValidator
+2019-06-06 16:55:56 INFO Pipeline: Check dependencies for: biolockj.module.seq.RarefySeqs
+2019-06-06 16:55:56 INFO Pipeline: Check dependencies for: diy.MyScript
+2019-06-06 16:55:56 INFO Pipeline: Check dependencies for: biolockj.module.seq.Multiplexer
+2019-06-06 16:55:56 WARN Multiplexer: BioLockJ requires demultiplexed data, so this must be the last module except Email
+2019-06-06 16:55:56 INFO Multiplexer: Multiplexing seqs as final step in pipeline.
+2019-06-06 16:55:56 INFO ModuleUtil: ========================================================================
+2019-06-06 16:55:56 INFO ModuleUtil: STARTING [ 00 ] biolockj.module.implicit.ImportMetadata
+2019-06-06 16:55:56 INFO ModuleUtil: ========================================================================
+2019-06-06 16:55:56 INFO ImportMetadata: Importing metadata (column delim=\t): /Users/ieclabau/git/blj_support/resources/test/metadata/testMetadata.tsv
+2019-06-06 16:55:56 INFO ModuleUtil: Create directory: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/00_ImportMetadata/output
+2019-06-06 16:55:56 INFO Config: Set Config property [ metadata.useEveryRow ] = N
+2019-06-06 16:55:56 INFO ImportMetadata: Clean up: biolockj.module.implicit.ImportMetadata
+2019-06-06 16:55:56 INFO MetaUtil: Update metadata cache: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/00_ImportMetadata/output/testMetadata.tsv
+2019-06-06 16:55:56 INFO MetaUtil: ************************************************************************
+2019-06-06 16:55:56 INFO MetaUtil: ===> New Metadata file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/00_ImportMetadata/output/testMetadata.tsv
+2019-06-06 16:55:56 INFO MetaUtil: ===> Sample IDs: [211, 214, 215, 217, 218, 220, 222, 223, 224, 225, 236, 237, 238, 241, 242, 245, 247, 248, 252, 257]
+2019-06-06 16:55:56 INFO MetaUtil: ===> Metadata fields: [Sex, Group, Age, BarcodeSequence]
+2019-06-06 16:55:56 INFO MetaUtil: ===> 1st Record: [211]: [M, Obese, 60, TGCACGTGATAA]
+2019-06-06 16:55:56 INFO MetaUtil: ************************************************************************
+2019-06-06 16:55:56 INFO ValidationUtil: Create directory: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/validation
+2019-06-06 16:55:56 INFO SummaryUtil: Update BioModule summary [ biolockj.module.implicit.ImportMetadata ] /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/summary.txt
+2019-06-06 16:55:56 INFO SummaryUtil: Building module summary for: ImportMetadata
+2019-06-06 16:55:56 INFO SummaryUtil: Summary updated
+2019-06-06 16:55:56 INFO ModuleUtil: ========================================================================
+2019-06-06 16:55:56 INFO ModuleUtil: FINISHED [ 00 ] biolockj.module.implicit.ImportMetadata
+2019-06-06 16:55:56 INFO ModuleUtil: ========================================================================
+2019-06-06 16:55:56 INFO ModuleUtil: ========================================================================
+2019-06-06 16:55:56 INFO ModuleUtil: STARTING [ 01 ] biolockj.module.seq.SeqFileValidator
+2019-06-06 16:55:56 INFO ModuleUtil: ========================================================================
+2019-06-06 16:55:56 INFO Config: Set Config property [ pipeline.detachJavaModules ] = N
+2019-06-06 16:55:56 INFO SeqFileValidator: # Input Files: 20
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [0]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/215_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [1]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/217_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [2]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/218_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [3]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/220_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [4]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/222_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [5]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/223_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [6]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/224_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [7]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/225_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [8]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/236_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [9]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/237_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [10]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/238_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [11]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/241_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [12]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/242_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [13]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/245_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [14]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/247_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [15]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/248_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [16]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/252_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [17]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/257_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [18]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/r16s_subDir/211_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Input File [19]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/r16s_subDir/214_R1.fastq.gz
+2019-06-06 16:55:56 INFO SeqFileValidator: Validate File [0]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/215_R1.fastq.gz
+2019-06-06 16:55:56 INFO ModuleUtil: Create directory: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output
+2019-06-06 16:55:57 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/215_R1.fastq
+2019-06-06 16:55:57 INFO SeqFileValidator: Validate File [1]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/217_R1.fastq.gz
+2019-06-06 16:55:57 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/217_R1.fastq
+2019-06-06 16:55:57 INFO SeqFileValidator: Validate File [2]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/218_R1.fastq.gz
+2019-06-06 16:55:57 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/218_R1.fastq
+2019-06-06 16:55:57 INFO SeqFileValidator: Validate File [3]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/220_R1.fastq.gz
+2019-06-06 16:55:57 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/220_R1.fastq
+2019-06-06 16:55:57 INFO SeqFileValidator: Validate File [4]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/222_R1.fastq.gz
+2019-06-06 16:55:57 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/222_R1.fastq
+2019-06-06 16:55:57 INFO SeqFileValidator: Validate File [5]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/223_R1.fastq.gz
+2019-06-06 16:55:57 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/223_R1.fastq
+2019-06-06 16:55:57 INFO SeqFileValidator: Validate File [6]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/224_R1.fastq.gz
+2019-06-06 16:55:57 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/224_R1.fastq
+2019-06-06 16:55:57 INFO SeqFileValidator: Validate File [7]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/225_R1.fastq.gz
+2019-06-06 16:55:57 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/225_R1.fastq
+2019-06-06 16:55:57 INFO SeqFileValidator: Validate File [8]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/236_R1.fastq.gz
+2019-06-06 16:55:57 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/236_R1.fastq
+2019-06-06 16:55:57 INFO SeqFileValidator: Validate File [9]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/237_R1.fastq.gz
+2019-06-06 16:55:57 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/237_R1.fastq
+2019-06-06 16:55:57 INFO SeqFileValidator: Validate File [10]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/238_R1.fastq.gz
+2019-06-06 16:55:57 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/238_R1.fastq
+2019-06-06 16:55:57 INFO SeqFileValidator: Validate File [11]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/241_R1.fastq.gz
+2019-06-06 16:55:57 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/241_R1.fastq
+2019-06-06 16:55:57 INFO SeqFileValidator: Validate File [12]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/242_R1.fastq.gz
+2019-06-06 16:55:57 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/242_R1.fastq
+2019-06-06 16:55:57 INFO SeqFileValidator: Validate File [13]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/245_R1.fastq.gz
+2019-06-06 16:55:57 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/245_R1.fastq
+2019-06-06 16:55:57 INFO SeqFileValidator: Validate File [14]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/247_R1.fastq.gz
+2019-06-06 16:55:57 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/247_R1.fastq
+2019-06-06 16:55:57 INFO SeqFileValidator: Validate File [15]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/248_R1.fastq.gz
+2019-06-06 16:55:57 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/248_R1.fastq
+2019-06-06 16:55:57 INFO SeqFileValidator: Validate File [16]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/252_R1.fastq.gz
+2019-06-06 16:55:57 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/252_R1.fastq
+2019-06-06 16:55:57 INFO SeqFileValidator: Validate File [17]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/257_R1.fastq.gz
+2019-06-06 16:55:57 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/257_R1.fastq
+2019-06-06 16:55:57 INFO SeqFileValidator: Validate File [18]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/r16s_subDir/211_R1.fastq.gz
+2019-06-06 16:55:58 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/211_R1.fastq
+2019-06-06 16:55:58 INFO SeqFileValidator: Validate File [19]: /Users/ieclabau/git/blj_support/resources/test/data/r16s_fastq/R1/r16s_subDir/214_R1.fastq.gz
+2019-06-06 16:55:58 INFO BioLockJUtil: Output file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/214_R1.fastq
+2019-06-06 16:55:58 INFO MetaUtil: Adding new field [Num_Valid_Reads] to metadata: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/testMetadata.tsv
+2019-06-06 16:55:58 INFO MetaUtil: Update metadata cache: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/testMetadata.tsv
+2019-06-06 16:55:58 INFO MetaUtil: ************************************************************************
+2019-06-06 16:55:58 INFO MetaUtil: ===> New Metadata file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/testMetadata.tsv
+2019-06-06 16:55:58 INFO MetaUtil: ===> Sample IDs: [211, 214, 215, 217, 218, 220, 222, 223, 224, 225, 236, 237, 238, 241, 242, 245, 247, 248, 252, 257]
+2019-06-06 16:55:58 INFO MetaUtil: ===> Metadata fields: [Sex, Group, Age, BarcodeSequence, Num_Valid_Reads]
+2019-06-06 16:55:58 INFO MetaUtil: ===> 1st Record: [211]: [M, Obese, 60, TGCACGTGATAA, 5746]
+2019-06-06 16:55:58 INFO MetaUtil: ************************************************************************
+2019-06-06 16:55:58 INFO SeqFileValidator: Clean up: biolockj.module.seq.SeqFileValidator
+2019-06-06 16:55:58 INFO SummaryUtil: Update BioModule summary [ biolockj.module.seq.SeqFileValidator ] /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/summary.txt
+2019-06-06 16:55:58 INFO SummaryUtil: Building module summary for: SeqFileValidator
+2019-06-06 16:55:58 INFO SummaryUtil: Summary updated
+2019-06-06 16:55:58 INFO ModuleUtil: ========================================================================
+2019-06-06 16:55:58 INFO ModuleUtil: FINISHED [ 01 ] biolockj.module.seq.SeqFileValidator
+2019-06-06 16:55:58 INFO ModuleUtil: ========================================================================
+2019-06-06 16:55:58 INFO ModuleUtil: ========================================================================
+2019-06-06 16:55:58 INFO ModuleUtil: STARTING [ 02 ] biolockj.module.seq.RarefySeqs
+2019-06-06 16:55:58 INFO ModuleUtil: ========================================================================
+2019-06-06 16:55:58 INFO RarefySeqs: Base #Reads based on: Num_Valid_Reads
+2019-06-06 16:55:58 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/257_R1.fastq
+2019-06-06 16:55:58 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:22181:6820 1:N:0:TGCTATATCTGGA
+2019-06-06 16:55:58 INFO SeqUtil: seq: TTTTACTTATAGAGTGCCAGCAGCCGCGGTAATACGTAGGTGGCGAGCGTTATCCGGAATTATTGGGCGTAAAGAGGGAGCAGGCGGCACTAAGGGTCTGTGGTGAAAGATCGAAGCTTAACTTCGGTAAGCCATGGAAACCGTAGAGCTAGAGTGTGTGAGAGGATCGTGGAATTCCATGTGTAGCGGTGAAATGCGTAGATATATGGAGGAACACCAGTGGCGAAGGCGACGATCTGG
+2019-06-06 16:55:58 INFO RarefySeqs: # Input Files: 20
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [0]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/211_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [1]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/214_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [2]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/215_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [3]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/217_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/218_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [5]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/220_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [6]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/222_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [7]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/223_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [8]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/224_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [9]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/225_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [10]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/236_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [11]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/237_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [12]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/238_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [13]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/241_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [14]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/242_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [15]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/245_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [16]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/247_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [17]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/248_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [18]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/252_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Input File [19]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/257_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Rarefy [#index=5746]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/211_R1.fastq
+2019-06-06 16:55:58 INFO ModuleUtil: Create directory: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output
+2019-06-06 16:55:58 INFO RarefySeqs: Building file [#lines/read=4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/211.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Done rarefying 0/20 files.
+2019-06-06 16:55:58 INFO RarefySeqs: Rarefy [#index=5188]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/214_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Building file [#lines/read=4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/214.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Rarefy [#index=4557]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/215_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Building file [#lines/read=4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/215.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Rarefy [#index=3000]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/217_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Building file [#lines/read=4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/217.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Rarefy [#index=3763]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/218_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Building file [#lines/read=4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/218.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Rarefy [#index=5092]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/220_R1.fastq
+2019-06-06 16:55:58 INFO RarefySeqs: Building file [#lines/read=4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/220.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Remove sample [222] - contains (2075) reads, which is less than minimum # reads (3000)
+2019-06-06 16:55:59 INFO RarefySeqs: Rarefy [#index=4135]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/223_R1.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Building file [#lines/read=4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/223.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Remove sample [224] - contains (1761) reads, which is less than minimum # reads (3000)
+2019-06-06 16:55:59 INFO RarefySeqs: Rarefy [#index=4287]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/225_R1.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Building file [#lines/read=4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/225.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Rarefy [#index=5690]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/236_R1.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Building file [#lines/read=4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/236.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Remove sample [237] - contains (2878) reads, which is less than minimum # reads (3000)
+2019-06-06 16:55:59 INFO RarefySeqs: Rarefy [#index=3000]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/238_R1.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Building file [#lines/read=4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/238.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Rarefy [#index=4596]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/241_R1.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Building file [#lines/read=4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/241.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Rarefy [#index=3000]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/242_R1.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Building file [#lines/read=4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/242.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Rarefy [#index=3120]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/245_R1.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Building file [#lines/read=4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/245.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Rarefy [#index=3000]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/247_R1.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Building file [#lines/read=4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/247.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Rarefy [#index=4584]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/248_R1.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Building file [#lines/read=4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/248.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Rarefy [#index=4489]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/252_R1.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Building file [#lines/read=4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/252.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Rarefy [#index=3000]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/257_R1.fastq
+2019-06-06 16:55:59 INFO RarefySeqs: Building file [#lines/read=4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/257.fastq
+2019-06-06 16:56:00 INFO RarefySeqs: Done rarefying 19/20 files.
+2019-06-06 16:56:00 INFO RarefySeqs: Clean up: biolockj.module.seq.RarefySeqs
+2019-06-06 16:56:00 INFO MetaUtil: Adding new field [Num_Rarefied_Reads] to metadata: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/testMetadata.tsv
+2019-06-06 16:56:00 WARN MetaUtil: REMOVE SAMPLE ID [222] from metadata file /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/testMetadata.tsv | Reason:  No valid seqs remain in: 222_R1.fastq.gz
+2019-06-06 16:56:00 WARN MetaUtil: REMOVE SAMPLE ID [224] from metadata file /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/testMetadata.tsv | Reason:  No valid seqs remain in: 224_R1.fastq.gz
+2019-06-06 16:56:00 WARN MetaUtil: REMOVE SAMPLE ID [237] from metadata file /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/testMetadata.tsv | Reason:  No valid seqs remain in: 237_R1.fastq.gz
+2019-06-06 16:56:00 INFO MetaUtil: Update metadata cache: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/testMetadata.tsv
+2019-06-06 16:56:00 INFO MetaUtil: ************************************************************************
+2019-06-06 16:56:00 INFO MetaUtil: ===> New Metadata file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/testMetadata.tsv
+2019-06-06 16:56:00 INFO MetaUtil: ===> Sample IDs: [211, 214, 215, 217, 218, 220, 223, 225, 236, 238, 241, 242, 245, 247, 248, 252, 257]
+2019-06-06 16:56:00 INFO MetaUtil: ===> Metadata fields: [Sex, Group, Age, BarcodeSequence, Num_Valid_Reads, Num_Rarefied_Reads]
+2019-06-06 16:56:00 INFO MetaUtil: ===> 1st Record: [211]: [M, Obese, 60, TGCACGTGATAA, 5746, 5746]
+2019-06-06 16:56:00 INFO MetaUtil: ************************************************************************
+2019-06-06 16:56:00 INFO SummaryUtil: Update BioModule summary [ biolockj.module.seq.RarefySeqs ] /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/summary.txt
+2019-06-06 16:56:00 INFO SummaryUtil: Building module summary for: RarefySeqs
+2019-06-06 16:56:00 INFO SummaryUtil: Summary updated
+2019-06-06 16:56:00 INFO ModuleUtil: ========================================================================
+2019-06-06 16:56:00 INFO ModuleUtil: FINISHED [ 02 ] biolockj.module.seq.RarefySeqs
+2019-06-06 16:56:00 INFO ModuleUtil: ========================================================================
+2019-06-06 16:56:00 INFO ModuleUtil: ========================================================================
+2019-06-06 16:56:00 INFO ModuleUtil: STARTING [ 03 ] diy.MyScript
+2019-06-06 16:56:00 INFO ModuleUtil: ========================================================================
+2019-06-06 16:56:00 INFO MyScript: # Input Files: 17
+2019-06-06 16:56:00 INFO MyScript: Input File [0]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/211.fastq
+2019-06-06 16:56:00 INFO MyScript: Input File [1]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/214.fastq
+2019-06-06 16:56:00 INFO MyScript: Input File [2]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/215.fastq
+2019-06-06 16:56:00 INFO MyScript: Input File [3]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/217.fastq
+2019-06-06 16:56:00 INFO MyScript: Input File [4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/218.fastq
+2019-06-06 16:56:00 INFO MyScript: Input File [5]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/220.fastq
+2019-06-06 16:56:00 INFO MyScript: Input File [6]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/223.fastq
+2019-06-06 16:56:00 INFO MyScript: Input File [7]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/225.fastq
+2019-06-06 16:56:00 INFO MyScript: Input File [8]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/236.fastq
+2019-06-06 16:56:00 INFO MyScript: Input File [9]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/238.fastq
+2019-06-06 16:56:00 INFO MyScript: Input File [10]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/241.fastq
+2019-06-06 16:56:00 INFO MyScript: Input File [11]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/242.fastq
+2019-06-06 16:56:00 INFO MyScript: Input File [12]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/245.fastq
+2019-06-06 16:56:00 INFO MyScript: Input File [13]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/247.fastq
+2019-06-06 16:56:00 INFO MyScript: Input File [14]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/248.fastq
+2019-06-06 16:56:00 INFO MyScript: Input File [15]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/252.fastq
+2019-06-06 16:56:00 INFO MyScript: Input File [16]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/257.fastq
+2019-06-06 16:56:00 INFO ModuleUtil: Create directory: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/03_MyScript/script
+2019-06-06 16:56:00 INFO BashScriptBuilder: Create new script: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/03_MyScript/script/03.0_MyScript.sh
+2019-06-06 16:56:00 INFO BashScriptBuilder: ========================================================================
+2019-06-06 16:56:00 INFO BashScriptBuilder: 1 WORKER scripts created for: diy.MyScript
+2019-06-06 16:56:00 INFO BashScriptBuilder: ========================================================================
+2019-06-06 16:56:00 INFO BashScriptBuilder: Create new script: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/03_MyScript/script/MAIN_03_MyScript.sh
+2019-06-06 16:56:00 INFO Processor: [ Set File Privs ]: STARTING
+2019-06-06 16:56:00 INFO Processor: [ Set File Privs ]: CMD --> chmod -R 770 /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/03_MyScript/script 
+2019-06-06 16:56:00 INFO Processor: [ Set File Privs ]: COMPLETE
+2019-06-06 16:56:00 INFO Processor: [ MyScript ]: STARTING
+2019-06-06 16:56:00 INFO Processor: [ MyScript ]: CMD --> /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/03_MyScript/script/MAIN_03_MyScript.sh 
+2019-06-06 16:56:00 INFO Processor: [ MyScript ]: My custom script is running...
+2019-06-06 16:56:00 INFO Processor: [ MyScript ]: hello world
+2019-06-06 16:56:00 INFO Processor: [ MyScript ]: My script runs in the script directory.
+2019-06-06 16:56:00 INFO Processor: [ MyScript ]: It creates an output directory...
+2019-06-06 16:56:00 INFO Processor: [ MyScript ]: And it creates a file.
+2019-06-06 16:56:00 INFO Processor: [ MyScript ]: It can access other files in the pipeline,
+2019-06-06 16:56:00 INFO Processor: [ MyScript ]: for example, my output file gives the number of sequences
+2019-06-06 16:56:00 INFO Processor: [ MyScript ]: that were removed from each sample by the 02_RarefySeqs module.
+2019-06-06 16:56:00 INFO Processor: [ MyScript ]: COMPLETE
+2019-06-06 16:56:00 INFO Pipeline: ------> Java program wakes every 60 seconds to check execution progress
+2019-06-06 16:56:00 INFO Pipeline: ------> Status determined by existance of indicator files in /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/03_MyScript/script
+2019-06-06 16:56:00 INFO Pipeline: ------> Indicator files end with: "_Started", "_Success", or "_Failures"
+2019-06-06 16:56:00 INFO Pipeline: ------> If any change to #Success/#Failed/#Running/#Queued changed, new values logged
+2019-06-06 16:56:00 INFO Pipeline: ------> Status message repeats every 10 minutes while scripts are executing (if status remains unchanged).
+2019-06-06 16:56:00 INFO Pipeline: ------> Running scripts will NEVER TIME OUT.
+2019-06-06 16:56:00 INFO Pipeline: MyScript Status (Total=2): Success=2; Failed=0; Running=-1; Queued=1
+2019-06-06 16:56:00 INFO MyScript: Clean up: diy.MyScript
+2019-06-06 16:56:00 INFO SummaryUtil: Update BioModule summary [ diy.MyScript ] /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/summary.txt
+2019-06-06 16:56:00 INFO SummaryUtil: Building module summary for: MyScript
+2019-06-06 16:56:00 INFO SummaryUtil: Summary updated
+2019-06-06 16:56:00 INFO ModuleUtil: ========================================================================
+2019-06-06 16:56:00 INFO ModuleUtil: FINISHED [ 03 ] diy.MyScript
+2019-06-06 16:56:00 INFO ModuleUtil: ========================================================================
+2019-06-06 16:56:00 INFO ModuleUtil: ========================================================================
+2019-06-06 16:56:00 INFO ModuleUtil: STARTING [ 04 ] biolockj.module.seq.Multiplexer
+2019-06-06 16:56:00 INFO ModuleUtil: ========================================================================
+2019-06-06 16:56:00 INFO Multiplexer: Multiplexing file type = fastq
+2019-06-06 16:56:00 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/03_MyScript/output/myOutputFile.txt
+2019-06-06 16:56:00 INFO SeqUtil: header: # I created this output at:
+2019-06-06 16:56:00 INFO SeqUtil: seq: # Thu Jun  6 16:56:00 EDT 2019
+2019-06-06 16:56:00 INFO SeqUtil: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/03_MyScript/output/myOutputFile.txt is not a sequence file! 
+Line 1: [ # I created this output at: ]
+Line 2= [ # Thu Jun  6 16:56:00 EDT 2019 ]
+2019-06-06 16:56:00 INFO SeqUtil: Check if input file is a SEQ file: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/214.fastq
+2019-06-06 16:56:00 INFO SeqUtil: header: @M01825:395:000000000-BDP37:1:2103:26001:6879 1:N:0:TGACCGGTCAATA
+2019-06-06 16:56:00 INFO SeqUtil: seq: TGAGACTGACGGAGTGCCAGCAGCCGCGGTAATACGGAGGATCCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGAGCGTAGGCGGACGCTTAAGTCAGTTGTGAAAGTTTGCGGCTCAACCGTAAAATTGCAGTTGATACTGGGTGTCTTGAGTACAGTAGAGGCAGGCGGAATTCGTGGGGTAGCGGTGAAATGCTTAGATATCACGAAGAACTCCGATTGCGAAGGCAGCCTGCTG
+2019-06-06 16:56:00 INFO Multiplexer: # Input Files: 17
+2019-06-06 16:56:00 INFO Multiplexer: Input File [0]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/211.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Input File [1]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/214.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Input File [2]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/215.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Input File [3]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/217.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Input File [4]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/218.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Input File [5]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/220.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Input File [6]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/223.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Input File [7]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/225.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Input File [8]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/236.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Input File [9]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/238.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Input File [10]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/241.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Input File [11]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/242.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Input File [12]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/245.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Input File [13]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/247.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Input File [14]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/248.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Input File [15]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/252.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Input File [16]: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/257.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Multiplexing file  = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/211.fastq
+2019-06-06 16:56:00 INFO ModuleUtil: Create directory: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/04_Multiplexer/output
+2019-06-06 16:56:00 INFO Multiplexer: Multiplexing file  = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/214.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Multiplexing file  = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/215.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Multiplexing file  = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/217.fastq
+2019-06-06 16:56:00 INFO Multiplexer: Multiplexing file  = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/218.fastq
+2019-06-06 16:56:01 INFO Multiplexer: Multiplexing file  = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/220.fastq
+2019-06-06 16:56:01 INFO Multiplexer: Multiplexing file  = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/223.fastq
+2019-06-06 16:56:01 INFO Multiplexer: Multiplexing file  = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/225.fastq
+2019-06-06 16:56:01 INFO Multiplexer: Multiplexing file  = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/236.fastq
+2019-06-06 16:56:01 INFO Multiplexer: Multiplexing file  = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/238.fastq
+2019-06-06 16:56:01 INFO Multiplexer: Multiplexing file  = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/241.fastq
+2019-06-06 16:56:01 INFO Multiplexer: Multiplexing file  = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/242.fastq
+2019-06-06 16:56:01 INFO Multiplexer: Multiplexing file  = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/245.fastq
+2019-06-06 16:56:01 INFO Multiplexer: Multiplexing file  = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/247.fastq
+2019-06-06 16:56:01 INFO Multiplexer: Multiplexing file  = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/248.fastq
+2019-06-06 16:56:01 INFO Multiplexer: Multiplexing file  = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/252.fastq
+2019-06-06 16:56:01 INFO Multiplexer: Multiplexing file  = /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/257.fastq
+2019-06-06 16:56:01 WARN Multiplexer: BioLockJ gzip data in: [/Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/04_Multiplexer/output/muxRareFq_plusBash_9_2019Jun06.fastq]
+2019-06-06 16:56:04 INFO Multiplexer: Clean up: biolockj.module.seq.Multiplexer
+2019-06-06 16:56:04 INFO SummaryUtil: Update BioModule summary [ biolockj.module.seq.Multiplexer ] /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/summary.txt
+2019-06-06 16:56:04 INFO SummaryUtil: Building module summary for: Multiplexer
+2019-06-06 16:56:04 INFO SummaryUtil: Summary updated
+2019-06-06 16:56:04 INFO ModuleUtil: ========================================================================
+2019-06-06 16:56:04 INFO ModuleUtil: FINISHED [ 04 ] biolockj.module.seq.Multiplexer
+2019-06-06 16:56:04 INFO ModuleUtil: ========================================================================
+2019-06-06 16:56:04 INFO Processor: [ Query Host ]: STARTING
+2019-06-06 16:56:04 INFO Processor: [ Query Host ]: CMD --> hostname 
+2019-06-06 16:56:04 INFO Processor: [ Query Host ]: CCI0PHJGH5AWS
+2019-06-06 16:56:04 INFO Processor: [ Query Host ]: COMPLETE
+2019-06-06 16:56:04 INFO DownloadUtil: DownloadUtil found there are no downloadable modules
+2019-06-06 16:56:04 INFO SummaryUtil: Summary updated
+2019-06-06 16:56:04 INFO Config: Set Config property [ pipeline.deleteTempFiles ] = N
+2019-06-06 16:56:04 INFO Processor: [ Set File Privs ]: STARTING
+2019-06-06 16:56:04 INFO Processor: [ Set File Privs ]: CMD --> chmod -R 770 /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06 
+2019-06-06 16:56:04 INFO Processor: [ Set File Privs ]: COMPLETE
+2019-06-06 16:56:04 INFO MasterConfigUtil: Sanitizing MASTER Config file so only properties accessed during pipeline execution are retained.
+2019-06-06 16:56:04 INFO MasterConfigUtil: To view the list of removed Config properties before MASTER config is sanitized in future runs, enable: pipeline.logLevel=Y
+2019-06-06 16:56:04 INFO MasterConfigUtil: To add DEBUG statements for only this utility class, add the property (this is a list property so multiple class names could be provided - in this example, wee add a single class): pipeline.limitDebugClasses=biolockj.util.MasterConfigUtil
+2019-06-06 16:56:04 INFO MasterConfigUtil: The original version of project Config contained: 74 properties
+2019-06-06 16:56:04 INFO MasterConfigUtil: The final version of MASTER Config contains: 30 properties
+2019-06-06 16:56:04 INFO BioLockJ: Log Pipeline Summary...
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Pipeline Name:    muxRareFq_plusBash_9_2019Jun06
+Input Config:     /Users/ieclabau/git/MyScript_module/test/muxRareFq_plusBash.properties
+# Modules:        5
+# Attempts:       1
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Module[0]:  biolockj.module.implicit.ImportMetadata
+Runtime:    00 hours : 00 minutes : 01 seconds
+---------------------------------------------------
+# Files Output:  1
+Mean Output File Size:  640 bytes
+New metadata: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/00_ImportMetadata/output/testMetadata.tsv
+Imported file:  /Users/ieclabau/git/blj_support/resources/test/metadata/testMetadata.tsv
+# Samples: 20
+# Fields:  4
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Module[1]:  biolockj.module.seq.SeqFileValidator
+Runtime:    00 hours : 00 minutes : 01 seconds
+------------------------------------------------
+# Files Output:  20
+Mean Output File Size:  2 MB
+New metadata: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/01_SeqFileValidator/output/testMetadata.tsv
+Valid SEQ Len Range --> min( 100 ) - max( 240 )
+# Samples:                20
+# Valid Reads (min):      1761
+# Valid Reads (median):   4590
+# Valid Reads (mean):     4670
+# Valid Reads (max):      6636
+# Valid Reads (total):    93407
+IDs w/ min Valid Reads:   [224]
+IDs w/ max Valid Reads:   [257]
+Mean valid read len:      240
+Min valid read len:       240
+Max valid read len:       240
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Module[2]:  biolockj.module.seq.RarefySeqs
+Runtime:    00 hours : 00 minutes : 01 seconds
+----------------------------------------------
+# Files Output:  17
+Mean Output File Size:  2 MB
+New metadata: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/testMetadata.tsv
+# Samples:          17
+# Reads (min):      3000
+# Reads (median):   4557
+# Reads (mean):     4480
+# Reads (max):      5746
+# Reads (total):    58247
+IDs w/ min Reads:   [242, 257, 247, 238, 217]
+IDs w/ max Reads:   [211]
+Removed empty samples:222, 224, 237
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Module[3]:  diy.MyScript
+Runtime:    00 hours : 00 minutes : 01 seconds
+----------------------------------------------
+# Files Output:  1
+Mean Output File Size:  397 bytes
+Main Script:  /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/03_MyScript/script/MAIN_03_MyScript.sh
+Executed 1/2 worker scripts [2 successful]
+Average worker script runtime: 216646 hours : 28 minutes
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Module[4]:  biolockj.module.seq.Multiplexer
+Runtime:    00 hours : 00 minutes : 03 seconds
+----------------------------------------------
+# Files Output:  1
+Mean Output File Size:  6 MB
+# Samples multiplexed = 17
+# Total Reads = 70247
+# Reads saved with existing reverse compliment header barcode: 70247
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Pipeline Name:     muxRareFq_plusBash_9_2019Jun06
+Runtime Env:       Localhost [ ieclabau@CCI0PHJGH5AWS ]
+Pipeline Status:   success!
+Pipeline Runtime:  00 hours : 00 minutes : 07 seconds
+Pipeline Dir:      /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06
+Input Config:      /Users/ieclabau/git/MyScript_module/test/muxRareFq_plusBash.properties
+Master Config:     /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/MASTER_muxRareFq_plusBash_9_2019Jun06.properties
+Final Metadata:    /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusBash_9_2019Jun06/02_RarefySeqs/output/testMetadata.tsv
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                    _-^-_
+                                                _','    \'~.
+                                             -'  ,'      `. `-_
+                                            !`-_.;________:.':::
+                                            !   /\        /\::::
+                                            |  /  \      /..\:::
+                                            ! /    \    /....\::
+                                            !/      \  /......\:
+                                            :--.___..\/_.__.--;;
+                                             -_      `!;;;;;;;'
+                                               `-_    !;;;;''
+                                                  `-. !;'
+                                                     <+>
+  _______      ___      ________      ___            (=)   ________      ________      ___ ____            __
+|\   __  \    |\  \    |\   __  \    |\  \           (=)  |\   __  \    |\   ____\    |\  \|\  \         |\  \
+\ \  \|\ /_   \ \  \   \ \  \|\  \   \ \  \          (=)  \ \  \|\  \   \ \  \___|    \ \  \/  /|_       \ \  \
+ \ \   __  \   \ \  \   \ \  \\\  \   \ \  \         (=)   \ \  \\\  \   \ \  \        \ \   ___  \    __ \ \  \
+  \ \  \|\  \   \ \  \   \ \  \\\  \   \ \  \____    (=)    \ \  \\\  \   \ \  \____    \ \  \\ \  \  |\  \\_\  \
+   \ \_______\   \ \__\   \ \_______\   \ \_______\  (=)     \ \_______\   \ \_______\   \ \__\\ \__\ \ \________\
+    \|_______|    \|__|    \|_______|    \|_______|  (=)      \|_______|    \|_______|    \|__| \|__|  \|________|
+                                                     (=)
+                                                     <+>
+                                                   .'/V\`.
+                                                 .' /   \  `.
+                                               .'  /     \   `.
+                                             .'   /       \    `.
+                                            \    |         |    /
+                                             \   |         |   /
+                                              \  |         |  /
+
+                C          O          M          P          L          E          T          E          
+
+
