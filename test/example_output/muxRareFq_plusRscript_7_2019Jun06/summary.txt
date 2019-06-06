@@ -1,0 +1,79 @@
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Pipeline Name:    muxRareFq_plusRscript_7_2019Jun06
+Input Config:     /Users/ieclabau/git/MyScript_module/test/muxRareFq_plusRscript.properties
+# Modules:        5
+# Attempts:       1
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Module[0]:  biolockj.module.implicit.ImportMetadata
+Runtime:    00 hours : 00 minutes : 01 seconds
+---------------------------------------------------
+# Files Output:  1
+Mean Output File Size:  640 bytes
+New metadata: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusRscript_7_2019Jun06/00_ImportMetadata/output/testMetadata.tsv
+Imported file:  /Users/ieclabau/git/blj_support/resources/test/metadata/testMetadata.tsv
+# Samples: 20
+# Fields:  4
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Module[1]:  biolockj.module.seq.SeqFileValidator
+Runtime:    00 hours : 00 minutes : 01 seconds
+------------------------------------------------
+# Files Output:  20
+Mean Output File Size:  2 MB
+New metadata: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusRscript_7_2019Jun06/01_SeqFileValidator/output/testMetadata.tsv
+Valid SEQ Len Range --> min( 100 ) - max( 240 )
+# Samples:                20
+# Valid Reads (min):      1761
+# Valid Reads (median):   4590
+# Valid Reads (mean):     4670
+# Valid Reads (max):      6636
+# Valid Reads (total):    93407
+IDs w/ min Valid Reads:   [224]
+IDs w/ max Valid Reads:   [257]
+Mean valid read len:      240
+Min valid read len:       240
+Max valid read len:       240
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Module[2]:  biolockj.module.seq.RarefySeqs
+Runtime:    00 hours : 00 minutes : 02 seconds
+----------------------------------------------
+# Files Output:  17
+Mean Output File Size:  2 MB
+New metadata: /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusRscript_7_2019Jun06/02_RarefySeqs/output/testMetadata.tsv
+# Samples:          17
+# Reads (min):      3000
+# Reads (median):   4557
+# Reads (mean):     4480
+# Reads (max):      5746
+# Reads (total):    58247
+IDs w/ min Reads:   [242, 257, 247, 238, 217]
+IDs w/ max Reads:   [211]
+Removed empty samples:222, 224, 237
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Module[3]:  diy.MyScript
+Runtime:    00 hours : 00 minutes : 01 seconds
+----------------------------------------------
+# Files Output:  1
+Mean Output File Size:  17 KB
+Main Script:  /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusRscript_7_2019Jun06/03_MyScript/script/MAIN_03_MyScript.sh
+Executed 1/1 worker scripts [1 successful]
+Average worker script runtime: <1 minute
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Module[4]:  biolockj.module.seq.Multiplexer
+Runtime:    00 hours : 00 minutes : 03 seconds
+----------------------------------------------
+# Files Output:  1
+Mean Output File Size:  6 MB
+# Samples multiplexed = 17
+# Total Reads = 70247
+# Reads saved with existing reverse compliment header barcode: 70247
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Pipeline Name:     muxRareFq_plusRscript_7_2019Jun06
+Runtime Env:       Localhost [ ieclabau@CCI0PHJGH5AWS ]
+Pipeline Status:   success!
+Pipeline Runtime:  00 hours : 00 minutes : 07 seconds
+Pipeline Dir:      /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusRscript_7_2019Jun06
+Input Config:      /Users/ieclabau/git/MyScript_module/test/muxRareFq_plusRscript.properties
+Master Config:     /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusRscript_7_2019Jun06/MASTER_muxRareFq_plusRscript_7_2019Jun06.properties
+Final Metadata:    /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusRscript_7_2019Jun06/02_RarefySeqs/output/testMetadata.tsv
+----------------------------------------------------------------------------------------------------------------------------------------------------------
