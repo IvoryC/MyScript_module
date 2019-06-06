@@ -18,7 +18,7 @@ public class MyScript extends ScriptModuleImpl {
 		final List<List<String>> data = new ArrayList<>();
 		List<String> inner = new ArrayList<>();
 		String localScript = getMyScript();
-		inner.add(getLauncher() + localScript);
+		inner.add(RUN_ME + " " + getLauncher() + localScript);
 		if ( localScript.endsWith(".sh") ) {
 			inner.add("touch " + localScript + "_Success");
 		}
@@ -47,7 +47,6 @@ public class MyScript extends ScriptModuleImpl {
 	public List<String> getWorkerScriptFunctions() throws Exception {
 		final List<String> lines = super.getWorkerScriptFunctions();
 		lines.add( "function " + RUN_ME + "() {" );
-		//lines.add("cd dirname(${BASH_SOURCE[0]})");
 		if ( getLauncher().length() > 0 ){
 			lines.add("$1 $2");
 		}else {
