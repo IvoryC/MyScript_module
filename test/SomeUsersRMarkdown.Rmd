@@ -1,7 +1,6 @@
 ---
 title: "Custom Analysis"
 author: "Ivory Blakley"
-date: "6/6/2019"
 output: html_document
 ---
 
@@ -13,26 +12,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
-```
+```{r }
+getModOutputFiles <- function(modName){
+  modDir = dir("../../", modName)
+  files=dir(paste0(c("../../",modDir, "/output/"),collapse=""), ".f*q")
+  files=paste0("../../", modDir , "/output/", files)
+  return(files)
+}
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
-# Use Pipeline Files
-
-This script assumes that it is called sometime after the RarefySeqs module and that the RarefySeqs module was called after SeqFileValidator
-```{r}
 getNumReads <- function(filePath){
   cmd=paste0(c("< ", filePath, " wc -l" ), collapse="")
   lines=system(cmd, intern=TRUE)
@@ -40,14 +29,11 @@ getNumReads <- function(filePath){
   reads = as.numeric(numLines) / 4
   return(reads)
 }
-
-getModOutputFiles <- function(modName){
-  modDir = dir("../../", modName)
-  files=dir(paste0(c("../../",modDir, "/output/"),collapse=""), ".f")
-  files=paste0("../../", modDir , "/output/", files)
-  return(files)
-}
 ```
+
+## Use Pipeline Files
+
+This script assumes that it is called sometime after the RarefySeqs module and that the RarefySeqs module was called after SeqFileValidator
 
 Get the output files from the two modules.
 ```{r}
@@ -58,8 +44,11 @@ rarify.files = getModOutputFiles( "RarefySeqs" )
 rfy.reads = sapply(rarify.files, getNumReads)
 ```
 
-Plot the results:
-```{r}
+## Include Plots
+
+You can also embed plots, for example:
+
+```{r echo=FALSE}
 boxplot(sfv.reads, rfy.reads, las=1, 
         col = c("coral", "dodgerblue3"), 
         names = c("before", "after"),
@@ -67,5 +56,8 @@ boxplot(sfv.reads, rfy.reads, las=1,
 title("Rarification")
 ```
 
-As shown above, the mean reads per file before running the rarifyer was about `r mean(sfv.reads)`.  After running the rarifier, the mean was about `r mean(rfy.reads)`.
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Use in-line code
+As shown above, the mean reads per file before running the rarifyer was about **`r mean(sfv.reads)`**.  After running the rarifier, the mean was about **`r mean(rfy.reads)`**. 
 

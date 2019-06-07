@@ -7,7 +7,7 @@ pipeDir="/Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusRMarkdown_2019Jun0
 touch ${pipeDir}/03_MyScript/script/03.0_MyScript.sh_Started
 
 function RunMe() {
-    $1 $2 &> log.log
+    $1 $2 &> renderMarkdown.R.log
 }
 
 function scriptFailed() {

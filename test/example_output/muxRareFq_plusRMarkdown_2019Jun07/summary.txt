@@ -35,7 +35,7 @@ Min valid read len:       240
 Max valid read len:       240
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 Module[2]:  biolockj.module.seq.RarefySeqs
-Runtime:    00 hours : 00 minutes : 02 seconds
+Runtime:    00 hours : 00 minutes : 01 seconds
 ----------------------------------------------
 # Files Output:  17
 Mean Output File Size:  2 MB
@@ -54,7 +54,7 @@ Module[3]:  diy.MyScript
 Runtime:    00 hours : 00 minutes : 01 seconds
 ----------------------------------------------
 # Files Output:  1
-Mean Output File Size:  770 KB
+Mean Output File Size:  688 KB
 Main Script:  /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusRMarkdown_2019Jun07/03_MyScript/script/MAIN_03_MyScript.sh
 Executed 1/1 worker scripts [1 successful]
 Average worker script runtime: <1 minute
@@ -71,7 +71,7 @@ Mean Output File Size:  6 MB
 Pipeline Name:     muxRareFq_plusRMarkdown_2019Jun07
 Runtime Env:       Localhost [ ieclabau@CCI0PHJGH5AWS ]
 Pipeline Status:   success!
-Pipeline Runtime:  00 hours : 00 minutes : 08 seconds
+Pipeline Runtime:  00 hours : 00 minutes : 07 seconds
 Pipeline Dir:      /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusRMarkdown_2019Jun07
 Input Config:      /Users/ieclabau/git/MyScript_module/test/muxRareFq_plusRMarkdown.properties
 Master Config:     /Users/ieclabau/git/BioLockJ/pipelines/muxRareFq_plusRMarkdown_2019Jun07/MASTER_muxRareFq_plusRMarkdown_2019Jun07.properties
