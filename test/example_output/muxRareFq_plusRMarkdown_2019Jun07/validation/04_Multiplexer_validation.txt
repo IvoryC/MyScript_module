@@ -1,0 +1,2 @@
+name	size	sizeMB	sizeGB	md5	MATCHED_EXPECTATION
+muxRareFq_plusRMarkdown_2019Jun07.fastq.gz	499963174912	499963	499	25679ffc3961cc635807d9fccfbf1a32	REPORT
