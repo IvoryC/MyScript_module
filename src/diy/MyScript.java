@@ -73,12 +73,17 @@ public class MyScript extends ScriptModuleImpl {
 		final List<String> lines = super.getWorkerScriptFunctions();
 		lines.add( "function " + RUN_ME + "() {" );
 		if ( getLauncher().length() > 0 ){
-			lines.add("$1 $2 &> " + LOG_FILE);
+			lines.add("$1 $2 &> " + getLogFile());
 		}else {
-			lines.add("$1 &> " + LOG_FILE);
+			lines.add("$1 &> " + getLogFile());
 		}
 		lines.add( "}" + RETURN );
 		return lines;
+	}
+	
+	private String getLogFile() throws ConfigPathException {
+		File orig = Config.getExistingFile(this, MY_SCRIPT);
+		return orig.getName() + Constants.LOG_EXT;
 	}
 
 	
@@ -87,5 +92,4 @@ public class MyScript extends ScriptModuleImpl {
 	private static String MY_SCRIPT = "myScript.myScript";
 	private static String LAUNCHER = "myScript.launcher";
 	private static String RESOURCES = "myScript.resources";
-	private static String LOG_FILE = "log.log";
 }
